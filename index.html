@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta name="theme-color" content="#d35400">
+<link rel="manifest" href="manifest.json">
+    i
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto de Venta - Panadería</title>
@@ -34,7 +37,7 @@
             display: flex; 
             align-items: center; 
             gap: 15px; 
-            text-align: left; 
+            text-align: left; la 
         }
         
         .logo-panaderia-header { 
@@ -1629,5 +1632,11 @@
             cargarInventarioInicial(); 
         };
     </script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+    </script>
+    
 </body>
 </html>
