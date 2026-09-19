@@ -1,0 +1,25 @@
+media:
+  input: public/media
+  output: /public/media
+
+content:
+  - name: productos
+    label: Productos de la Panadería
+    type: file
+    path: productos.json
+    fields:
+      - name: lista
+        label: Lista de Productos
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            label: Nombre del Pan
+            type: string
+          - name: precio
+            label: Precio ($)
+            type: number
+          - name: imagen
+            label: Imagen
+            type: image
+            
